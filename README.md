@@ -2,6 +2,17 @@
 
 A tiny tool for saving and sharing a wish list.
 
+## Project Developtment Plan
+
+-[ ] List Items Page
+-[ ] Login Page
+-[ ] Item Details Page
+-[ ] Settings Page
+-[ ] Share With User Feature
+-[ ] Subscribe On PinList Feature
+-[ ] i18n
+-[ ] Link Processing
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
