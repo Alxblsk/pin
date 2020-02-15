@@ -4,14 +4,14 @@ A tiny tool for saving and sharing a wish list.
 
 ## Project Developtment Plan
 
--[ ] List Items Page
--[ ] Login Page
--[ ] Item Details Page
--[ ] Settings Page
--[ ] Share With User Feature
--[ ] Subscribe On PinList Feature
--[ ] i18n
--[ ] Link Processing
+- [ ] List Items Page
+- [ ] Login Page
+- [ ] Item Details Page
+- [ ] Settings Page
+- [ ] Share With User Feature
+- [ ] Subscribe On PinList Feature
+- [ ] i18n
+- [ ] Link Processing
 
 ## Development server
 
