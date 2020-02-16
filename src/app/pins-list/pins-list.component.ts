@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IPinsListItem } from '../pins-list-item/pins-list-item.component';
+import { PinsManagementService } from '../pins-management.service';
 
 @Component({
   selector: 'app-pins-list',
@@ -11,17 +12,25 @@ export class PinsListComponent {
   pinsList: IPinsListItem[];
   isAddingNew: boolean;
 
-  constructor() {
-    this.pinsList = [];
+  constructor(private pinsManagement: PinsManagementService) {
+    this.pinsList = pinsManagement.getPins();
+    this.editModeOff();
+  }
+
+  editModeOff() {
     this.isAddingNew = false;
   }
 
-  onPinAdd() {
+  editModeOn() {
     this.isAddingNew = true;
   }
 
+  onPinAdd() {
+    this.editModeOn();
+  }
+
   onPinSave(item: IPinsListItem) {
-    this.pinsList.push(item);
-    this.isAddingNew = false;
+    this.pinsList = this.pinsManagement.savePin(item);
+    this.editModeOff();
   }
 }

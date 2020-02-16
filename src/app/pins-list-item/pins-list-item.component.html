@@ -3,6 +3,6 @@
         <span *ngIf="!edit">{{item.title}} (${{item.price}})</span>
     </label>
     <input type="text" [(ngModel)]="item.title" name="title" *ngIf="edit" autocomplete="off" placeholder="Title">
-    <input type="number" min="0" [(ngModel)]="item.price" placeholder="Price" *ngIf="edit">
+    <input type="number" min="0" [(ngModel)]="item.price" placeholder="Price" name="price" *ngIf="edit">
     <input type="submit" value="save" [disabled]="!item.title" *ngIf="edit">
 </form>
