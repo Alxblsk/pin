@@ -1,0 +1,10 @@
+.pins-list {
+    > .saved {
+        border: 1px solid var(--c-orange);
+        border-radius: 5px;
+
+        &:empty {
+            border: 0 none;
+        }
+    }
+}

@@ -1,5 +1,8 @@
+<h2>Pins</h2>
 <div class="pins-list">
-    <app-pins-list-item *ngFor="let pin of pinsList" [item]="pin"></app-pins-list-item>
+    <div class="saved">
+        <app-pins-list-item *ngFor="let pin of pinsList" [item]="pin"></app-pins-list-item>
+    </div>
     <button *ngIf="!isAddingNew" (click)="onPinAdd()">Add New</button>
-    <app-pins-list-item *ngIf="isAddingNew" [item]="{ id: pinsList.length + 1, title: '' }" (saveEvent)="onPinSave($event)" [edit]="true"></app-pins-list-item>
+    <app-pins-list-item *ngIf="isAddingNew" [item]="{ id: pinsList.length + 1 }" (saveEvent)="onPinSave($event)" [edit]="true"></app-pins-list-item>
 </div>

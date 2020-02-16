@@ -1,7 +1,8 @@
 <form (submit)="onFormSubmit($event)" *ngIf="item">
     <label for="title">{{item.id}}
-        <span *ngIf="!edit">{{item.title}}</span>
+        <span *ngIf="!edit">{{item.title}} (${{item.price}})</span>
     </label>
-    <input type="text" [(ngModel)]="item.title" name="title" *ngIf="edit">
+    <input type="text" [(ngModel)]="item.title" name="title" *ngIf="edit" autocomplete="off" placeholder="Title">
+    <input type="number" min="0" [(ngModel)]="item.price" placeholder="Price" *ngIf="edit">
     <input type="submit" value="save" [disabled]="!item.title" *ngIf="edit">
 </form>
