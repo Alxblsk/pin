@@ -1,14 +1,20 @@
 .pins-list-title {
     font-size: 24px;
     line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .pins-list {
     margin-top: 10px;
-    
-    > .saved {
+}
 
-        &:empty {
-        }
-    }
+.pin-add {
+    height: 24px;
+    width: 24px;
+    border: 0 none;
+    background: url(../../assets/icon-add.svg) no-repeat center center;
+    appearance: none;
+    cursor: pointer;
 }

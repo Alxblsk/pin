@@ -12,8 +12,6 @@
         <span class="price">
             <input type="number" min="0" [(ngModel)]="item.price" placeholder="Price" name="price">
         </span>
-        <span class="submit">
-            <input type="submit" value="save" [disabled]="!item.title">
-        </span>
+        <input type="submit" value="" [disabled]="!item.title">
     </form>
 </div>
