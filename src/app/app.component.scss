@@ -1,4 +1,17 @@
 .app-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
+    --card-top-spacing: 50px;
+
+    height: calc(100vh - var(--card-top-spacing));
+    max-width: 400px;
+    margin: var(--card-top-spacing) auto 0;
+    padding: 20px 10px 0;
+    background-color: var(--c-lightgray);
+
+    border: 1px solid lightgrey;
+    border-bottom: 0 none;
+    border-radius: 5px 5px 0 0;
+
+    /* Think of keeping grades of gray */
+    box-shadow: 0 0 20px 2px #dadada;
+    box-sizing: border-box;
 }

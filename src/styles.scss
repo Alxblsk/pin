@@ -1,11 +1,14 @@
 :root {
+    --c-white: #FFFFFF;
     --c-lightgray: #EDEDED;
     --c-orange: #FFA41B;
     --c-pink: #FF5151;
     --c-violet: #9818D6;
+    --c-black: #000000;
 }  
 
-html, body {
+html, body, p,
+h1, h2, h3, h4, h5, h5, h6 {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -15,6 +18,6 @@ html, body {
 }
 
 body {
-    min-height: 100vh;
-    background-color: var(--c-lightgray);
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--c-white);
 }

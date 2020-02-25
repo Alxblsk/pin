@@ -1,0 +1,41 @@
+.pins-list-item {
+    .read-only-mode {
+        margin-bottom: 10px; 
+
+        .title {
+            line-height: 24px;
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 14px;
+            line-height: 18px;
+            opacity: 0.5;
+        }
+    }
+
+    .edit-mode {
+        display: flex;
+        align-items: center;
+
+        .title {
+            flex-grow: 1;
+        }
+
+        .identifier,
+        .title,
+        .price {
+            margin-right: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%;
+            border: 0 none;
+            padding: 3px 5px;
+            box-sizing: border-box;
+            appearance: none;
+        }
+    }
+}
