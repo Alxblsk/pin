@@ -7,7 +7,7 @@
     <form class="edit-mode" (submit)="onFormSubmit($event)" *ngIf="item && edit">
         <span class="identifier">{{item.id}}</span>
         <span class="title">
-            <input type="text" [(ngModel)]="item.title" name="title" autocomplete="off" placeholder="Title">
+            <input type="text" [(ngModel)]="item.title" name="title" autocomplete="off" placeholder="Title" autofocus="true">
         </span>
         <span class="price">
             <input type="number" min="0" [(ngModel)]="item.price" placeholder="Price" name="price">

@@ -13,6 +13,8 @@ A tiny tool for saving and sharing a wish list.
 - [ ] i18n
 - [ ] Link Processing
 
+<img src="/docs/diagrams/pin-v0.1.png" alt="Initial diagram for Pin" />
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
